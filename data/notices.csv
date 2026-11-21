@@ -1,0 +1,6 @@
+event,person,intent,old_slot,new_slot,state,received
+R1,P015,2026-15-solo,2026-1-solo-C,B3,fixed_original,2026-04-14T10:00
+R2,P004,2026-4-solo,2026-2-solo-B,B1,offered,2026-04-14T10:10
+R3,P008,2026-8-solo,2026-0-solo-A,B4,offered,2026-04-14T10:30
+R4,P004,2026-4-solo,2026-2-solo-B,B1,accepted,2026-04-15T14:00
+R5,P008,2026-8-solo,2026-0-solo-A,B4,withdrawn,2026-04-16T10:00

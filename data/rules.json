@@ -1,0 +1,49 @@
+{
+  "candidate_rules": {
+    "current": [
+      [
+        10,
+        12
+      ],
+      [
+        13,
+        15
+      ],
+      [
+        16,
+        18
+      ]
+    ],
+    "merge_low": [
+      [
+        10,
+        15
+      ],
+      [
+        16,
+        18
+      ]
+    ],
+    "split_border": [
+      [
+        10,
+        13
+      ],
+      [
+        13,
+        16
+      ],
+      [
+        16,
+        18
+      ]
+    ]
+  },
+  "threshold": {
+    "min_group_entries": 4,
+    "min_probability_group_runs": 0.8,
+    "max_experience_gap_years": 2,
+    "min_supported_choice_seasons": 2
+  },
+  "bands": "区间边界含端点；有两组选择表示互斥报名，不计两人。经验用连续参加的训练年数。团体项目需要同队两人同时选择且日期相容。同一领队可同时带同一赛区的队，不能在重叠时段带不同赛区的队。历届 entries 未注明场馆的按同一赛区办理。"
+}
