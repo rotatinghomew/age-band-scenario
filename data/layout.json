@@ -66,5 +66,36 @@
       "state",
       "received"
     ]
+  },
+  "migration_requests": {
+    "summary": "原场签认人与联赛队提出的互为前提请求，may_withdraw 仅描述该队能否撤回请求。",
+    "header": [
+      "request",
+      "person",
+      "old_slot",
+      "new_slot",
+      "requires",
+      "release_by",
+      "may_withdraw"
+    ]
+  },
+  "migration_replies": {
+    "summary": "队员本人同意、撤回，或原场有权人签释；只指明本次确实回应的申请。",
+    "header": [
+      "event",
+      "request",
+      "by",
+      "action",
+      "received"
+    ]
+  },
+  "announced_groups": {
+    "summary": "实际已通知成立的旧组与保留人数；核对按报名时已确认人数，不从模拟使用人数倒推。",
+    "header": [
+      "slot",
+      "minimum",
+      "notices_at",
+      "cancelled"
+    ]
   }
 }

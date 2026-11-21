@@ -1,0 +1,5 @@
+request,person,old_slot,new_slot,requires,release_by,may_withdraw
+X1,P004,2026-2-solo-B,B1,X2,M1,yes
+X2,P006,2026-1-solo-C,B3,X1+X3,M2,yes
+X3,P007,2026-2-pair-C,B7,X2,M3,yes
+X4,P009,2026-1-solo-A,B4,,M4,yes

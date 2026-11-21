@@ -25,3 +25,13 @@ class SourceRecords(unittest.TestCase):
         confirmations = [row for row in tables['notices'] if row['state']=='accepted']
         self.assertTrue(all(any(row['new_slot']==item['new_slot'] and row['received']>item['received'] and item['state']=='offered'
                                 for item in tables['notices']) for row in confirmations))
+
+    def test_migration_forms_have_distinct_team_and_venue_replies(self):
+        tables = read_tables()
+        requests = {row['request']:row for row in tables['migration_requests']}
+        for remaining in requests.values():
+            self.assertLessEqual(set(filter(None,remaining['requires'].split('+'))),set(requests))
+        for reply in tables['migration_replies']:
+            request = requests[reply['request']]
+            self.assertEqual(reply['by'],request['release_by'] if reply['action']=='release' else request['person'])
+        self.assertTrue(any(row['action']=='withdraw' for row in tables['migration_replies']))

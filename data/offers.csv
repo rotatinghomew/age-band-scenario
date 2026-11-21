@@ -5,3 +5,4 @@ B3,merge_low,solo,16-18,2,570,630,7,V1
 B4,split_border,solo,10-13,0,540,600,8,V1
 B5,split_border,pair,13-16,0,570,630,7,V2
 B6,split_border,solo,16-18,2,570,630,7,V1
+B7,merge_low,pair,16-18,2,550,610,7,V2
